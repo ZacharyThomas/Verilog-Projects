@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Verilog Projects/adv_processors_verilog_hw_1/car_ctrl.xst" -ofn "C:/Verilog Projects/adv_processors_verilog_hw_1/car_ctrl.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/adv_processors_verilog_hw_1/car_ctrl.xst" -ofn "C:/Verilog Projects/adv_processors_verilog_hw_1/car_ctrl.syr" 

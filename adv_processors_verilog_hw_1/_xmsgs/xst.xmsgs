@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Verilog Projects\adv_processors_verilog_hw_1\car_ctrl.v" Line 83: Signal &lt;<arg fmt="%s" index="1">state</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Verilog Projects\adv_processors_verilog_hw_1\car_ctrl.v" Line 84: Signal &lt;<arg fmt="%s" index="1">state</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Verilog Projects\adv_processors_verilog_hw_1\car_ctrl.v" Line 84: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Verilog Projects\adv_processors_verilog_hw_1\car_ctrl.v" Line 85: Signal &lt;<arg fmt="%s" index="1">speed</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Verilog Projects\adv_processors_verilog_hw_1\car_ctrl.v" Line 85: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1401" delta="old" >"C:\Verilog Projects\adv_processors_verilog_hw_1\car_ctrl.v" Line 38: Signal <arg fmt="%s" index="1">speed[1]</arg> in unit <arg fmt="%s" index="2">car_ctrl</arg> is connected to following multiple drivers:
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Verilog Projects\adv_processors_verilog_hw_1\car_ctrl.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">car_ctrl</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

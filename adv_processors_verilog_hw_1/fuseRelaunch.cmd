@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Verilog Projects/adv_processors_verilog_hw_1/tb_car_ctrl_isim_beh.exe" -prj "C:/Verilog Projects/adv_processors_verilog_hw_1/tb_car_ctrl_beh.prj" "work.tb_car_ctrl" "work.glbl" 

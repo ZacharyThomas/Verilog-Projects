@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Verilog Projects/MIPS_Processor/onebit_adder.xst" -ofn "C:/Verilog Projects/MIPS_Processor/onebit_adder.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/MIPS_Processor/onebit_adder.xst" -ofn "C:/Verilog Projects/MIPS_Processor/onebit_adder.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/MIPS_Processor/onebit_adder.xst" -ofn "C:/Verilog Projects/MIPS_Processor/onebit_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "onebit_adder.ngc" onebit_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o onebit_adder_map.ncd onebit_adder.ngd onebit_adder.pcf 
+par -w -intstyle ise -ol high -mt off onebit_adder_map.ncd onebit_adder.ncd onebit_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml onebit_adder.twx onebit_adder.ncd -o onebit_adder.twr onebit_adder.pcf 
+xst -intstyle ise -ifn "C:/Verilog Projects/MIPS_Processor/onebit_adder.xst" -ofn "C:/Verilog Projects/MIPS_Processor/onebit_adder.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/MIPS_Processor/onebit_adder.xst" -ofn "C:/Verilog Projects/MIPS_Processor/onebit_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "onebit_adder.ngc" onebit_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o onebit_adder_map.ncd onebit_adder.ngd onebit_adder.pcf 
+par -w -intstyle ise -ol high -mt off onebit_adder_map.ncd onebit_adder.ncd onebit_adder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml onebit_adder.twx onebit_adder.ncd -o onebit_adder.twr onebit_adder.pcf 
