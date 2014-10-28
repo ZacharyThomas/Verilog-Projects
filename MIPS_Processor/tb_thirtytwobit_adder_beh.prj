@@ -1,0 +1,8 @@
+verilog work "onebit_adder.v"
+verilog work "twobit_adder.v"
+verilog work "fourbit_adder.v"
+verilog work "eightbit_adder.v"
+verilog work "sixteenbit_adder.v"
+verilog work "thirtytwobit_adder.v"
+verilog work "tb_thirtytwobit_adder.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

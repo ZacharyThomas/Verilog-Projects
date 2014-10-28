@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Verilog Projects/MIPS_Processor/tb_thirtytwobit_adder_isim_beh.exe" -prj "C:/Verilog Projects/MIPS_Processor/tb_thirtytwobit_adder_beh.prj" "work.tb_thirtytwobit_adder" "work.glbl" 
