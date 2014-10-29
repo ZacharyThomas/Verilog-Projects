@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -7,15 +7,24 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/fourbit_adder C:|Verilog Projects|MIPS_Processor|fourbit_adder.v</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_1 - sixteenbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_1 - fourbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_2 - fourbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_1 - sixteenbit_adder/inst_2 - eightbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_2 - sixteenbit_adder/inst_1 - eightbit_adder/inst_1 - fourbit_adder/inst_2 - twobit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_2 - sixteenbit_adder/inst_1 - eightbit_adder/inst_2 - fourbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_2 - sixteenbit_adder/inst_2 - eightbit_adder</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>onebit_adder (C:/Verilog Projects/MIPS_Processor/onebit_adder.v)</SelectedItem>
+         <SelectedItem>thirtytwobit_adder (C:/Verilog Projects/MIPS_Processor/thirtytwobit_adder.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000f1000000020000000000000000000000000200000064ffffffff000000810000000300000002000000f10000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000129000000020000000000000000000000000200000064ffffffff000000810000000300000002000001290000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>onebit_adder (C:/Verilog Projects/MIPS_Processor/onebit_adder.v)</CurrentItem>
+      <CurrentItem>thirtytwobit_adder (C:/Verilog Projects/MIPS_Processor/thirtytwobit_adder.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -27,7 +36,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -68,34 +77,44 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000df000000010000000100000000000000000000000064ffffffff000000810000000000000001000000df0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/fourbit_adder C:|Verilog Projects|MIPS_Processor|fourbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_eightbit_adder C:|Verilog Projects|MIPS_Processor|tb_eightbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_fourbit_adder C:|Verilog Projects|MIPS_Processor|tb_fourbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_onebit_adder C:|Verilog Projects|MIPS_Processor|tb_onebit_adder.v</ClosedNode>
+         <ClosedNode>/tb_sixteenbit_adder C:|Verilog Projects|MIPS_Processor|tb_sixteenbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|tb_thirtytwobit_adder.v</ClosedNode>
+         <ClosedNode>/tb_thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|tb_thirtytwobit_adder.v/uut - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/tb_twobit_adder C:|Verilog Projects|MIPS_Processor|tb_twobit_adder.v</ClosedNode>
+         <ClosedNode>/tb_twobit_adder C:|Verilog Projects|MIPS_Processor|tb_twobit_adder.v/uut - twobit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_onebit_adder (C:/Verilog Projects/MIPS_Processor/tb_onebit_adder.v)</SelectedItem>
+         <SelectedItem>tb_thirtytwobit_adder (C:/Verilog Projects/MIPS_Processor/tb_thirtytwobit_adder.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000112000000020000000000000000000000000200000064ffffffff000000810000000300000002000001120000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_onebit_adder (C:/Verilog Projects/MIPS_Processor/tb_onebit_adder.v)</CurrentItem>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000139000000020000000000000000000000000200000064ffffffff000000810000000300000002000001390000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>tb_thirtytwobit_adder (C:/Verilog Projects/MIPS_Processor/tb_thirtytwobit_adder.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f0000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -104,14 +123,14 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f0000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000000c2000000b401000000050100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
 </Project>

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Verilog Projects/MIPS_Processor/thirtytwobit_adder.xst" -ofn "C:/Verilog Projects/MIPS_Processor/thirtytwobit_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "thirtytwobit_adder.ngc" thirtytwobit_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o thirtytwobit_adder_map.ncd thirtytwobit_adder.ngd thirtytwobit_adder.pcf 
+par -w -intstyle ise -ol high -mt off thirtytwobit_adder_map.ncd thirtytwobit_adder.ncd thirtytwobit_adder.pcf 
+xst -intstyle ise -ifn "C:/Verilog Projects/MIPS_Processor/thirtytwobit_adder.xst" -ofn "C:/Verilog Projects/MIPS_Processor/thirtytwobit_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "thirtytwobit_adder.ngc" thirtytwobit_adder.ngd  
