@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="MIPS_Processor" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/alu_complete C:|Verilog Projects|MIPS_Processor|alu_complete.v</ClosedNode>
+         <ClosedNode>/alu_complete C:|Verilog Projects|MIPS_Processor|alu_complete.v/alu - alu_module</ClosedNode>
+         <ClosedNode>/alu_module C:|Verilog Projects|MIPS_Processor|alu_module.v</ClosedNode>
+         <ClosedNode>/alu_module C:|Verilog Projects|MIPS_Processor|alu_module.v/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_1 - fourbit_adder/inst_2 - twobit_adder</ClosedNode>
+         <ClosedNode>/alu_module C:|Verilog Projects|MIPS_Processor|alu_module.v/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_2 - fourbit_adder</ClosedNode>
+         <ClosedNode>/alu_module C:|Verilog Projects|MIPS_Processor|alu_module.v/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_2 - eightbit_adder</ClosedNode>
+         <ClosedNode>/alu_module C:|Verilog Projects|MIPS_Processor|alu_module.v/adder - thirtytwobit_adder/inst_2 - sixteenbit_adder</ClosedNode>
+         <ClosedNode>/control_alu C:|Verilog Projects|MIPS_Processor|control_alu.v</ClosedNode>
+         <ClosedNode>/control_alu C:|Verilog Projects|MIPS_Processor|control_alu.v/alu - alu_module</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v/alu - alu_module</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v/alu - alu_module/adder - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v/fetch - fetch_module</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v/fetch - fetch_module/adder - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/fetch_module C:|Verilog Projects|MIPS_Processor|fetch_module.v</ClosedNode>
+         <ClosedNode>/fetch_module C:|Verilog Projects|MIPS_Processor|fetch_module.v/adder - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/fetch_module C:|Verilog Projects|MIPS_Processor|fetch_module.v/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_1 - fourbit_adder/inst_2 - twobit_adder</ClosedNode>
+         <ClosedNode>/fetch_module C:|Verilog Projects|MIPS_Processor|fetch_module.v/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_2 - fourbit_adder</ClosedNode>
+         <ClosedNode>/fetch_module C:|Verilog Projects|MIPS_Processor|fetch_module.v/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_2 - eightbit_adder</ClosedNode>
+         <ClosedNode>/fetch_module C:|Verilog Projects|MIPS_Processor|fetch_module.v/adder - thirtytwobit_adder/inst_2 - sixteenbit_adder</ClosedNode>
+         <ClosedNode>/fourbit_adder C:|Verilog Projects|MIPS_Processor|fourbit_adder.v</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_1 - fourbit_adder/inst_2 - twobit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_2 - fourbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_1 - sixteenbit_adder/inst_2 - eightbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_2 - sixteenbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_2 - sixteenbit_adder/inst_1 - eightbit_adder/inst_1 - fourbit_adder/inst_2 - twobit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_2 - sixteenbit_adder/inst_1 - eightbit_adder/inst_2 - fourbit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v/inst_2 - sixteenbit_adder/inst_2 - eightbit_adder</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>controller - control_module (C:/Verilog Projects/MIPS_Processor/control_module.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016f0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>controller - control_module (C:/Verilog Projects/MIPS_Processor/control_module.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000001b10000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>onebit_adder.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000112000000010000000100000000000000000000000064ffffffff000000810000000000000001000001120000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/alu_complete C:|Verilog Projects|MIPS_Processor|alu_complete.v</ClosedNode>
+         <ClosedNode>/alu_module C:|Verilog Projects|MIPS_Processor|alu_module.v</ClosedNode>
+         <ClosedNode>/alu_module_tb C:|Verilog Projects|MIPS_Processor|alu_module_tb.v</ClosedNode>
+         <ClosedNode>/control_alu C:|Verilog Projects|MIPS_Processor|control_alu.v</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v/alu - alu_module</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v/fetch - fetch_module</ClosedNode>
+         <ClosedNode>/datapath_module C:|Verilog Projects|MIPS_Processor|datapath_module.v/uut - alu_module</ClosedNode>
+         <ClosedNode>/fourbit_adder C:|Verilog Projects|MIPS_Processor|fourbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_PC C:|Verilog Projects|MIPS_Processor|tb_PC.v</ClosedNode>
+         <ClosedNode>/tb_alu_complete C:|Verilog Projects|MIPS_Processor|tb_alu_complete.v</ClosedNode>
+         <ClosedNode>/tb_alu_complete C:|Verilog Projects|MIPS_Processor|tb_alu_complete.v/uut - alu_complete/alu - alu_module/adder - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/tb_alu_module C:|Verilog Projects|MIPS_Processor|tb_alu_module.v</ClosedNode>
+         <ClosedNode>/tb_alu_module C:|Verilog Projects|MIPS_Processor|tb_alu_module.v/uut - alu_module/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_1 - fourbit_adder/inst_2 - twobit_adder</ClosedNode>
+         <ClosedNode>/tb_alu_module C:|Verilog Projects|MIPS_Processor|tb_alu_module.v/uut - alu_module/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_1 - eightbit_adder/inst_2 - fourbit_adder</ClosedNode>
+         <ClosedNode>/tb_alu_module C:|Verilog Projects|MIPS_Processor|tb_alu_module.v/uut - alu_module/adder - thirtytwobit_adder/inst_1 - sixteenbit_adder/inst_2 - eightbit_adder</ClosedNode>
+         <ClosedNode>/tb_alu_module C:|Verilog Projects|MIPS_Processor|tb_alu_module.v/uut - alu_module/adder - thirtytwobit_adder/inst_2 - sixteenbit_adder</ClosedNode>
+         <ClosedNode>/tb_control_alu C:|Verilog Projects|MIPS_Processor|tb_control_alu.v</ClosedNode>
+         <ClosedNode>/tb_data_memory C:|Verilog Projects|MIPS_Processor|tb_data_memory.v</ClosedNode>
+         <ClosedNode>/tb_datapath_module C:|Verilog Projects|MIPS_Processor|tb_datapath_module.v/uut - datapath_module/alu - alu_module</ClosedNode>
+         <ClosedNode>/tb_datapath_module C:|Verilog Projects|MIPS_Processor|tb_datapath_module.v/uut - datapath_module/fetch - fetch_module</ClosedNode>
+         <ClosedNode>/tb_datapath_module C:|Verilog Projects|MIPS_Processor|tb_datapath_module.v/uut - datapath_module/fetch - fetch_module/adder - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/tb_eightbit_adder C:|Verilog Projects|MIPS_Processor|tb_eightbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_fetch_module C:|Verilog Projects|MIPS_Processor|tb_test_module.v</ClosedNode>
+         <ClosedNode>/tb_fetch_module C:|Verilog Projects|MIPS_Processor|tb_test_module.v/uut - fetch_module/adder - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/tb_fourbit_adder C:|Verilog Projects|MIPS_Processor|tb_fourbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_instruction_memory C:|Verilog Projects|MIPS_Processor|tb_instruction_memory.v</ClosedNode>
+         <ClosedNode>/tb_mult_module C:|Verilog Projects|MIPS_Processor|tb_mult_module.v</ClosedNode>
+         <ClosedNode>/tb_onebit_adder C:|Verilog Projects|MIPS_Processor|tb_onebit_adder.v</ClosedNode>
+         <ClosedNode>/tb_register_file C:|Verilog Projects|MIPS_Processor|tb_register_file.v</ClosedNode>
+         <ClosedNode>/tb_sign_extender C:|Verilog Projects|MIPS_Processor|tb_sign_extender.v</ClosedNode>
+         <ClosedNode>/tb_sixteenbit_adder C:|Verilog Projects|MIPS_Processor|tb_sixteenbit_adder.v</ClosedNode>
+         <ClosedNode>/tb_test_module C:|Verilog Projects|MIPS_Processor|tb_test_module.v</ClosedNode>
+         <ClosedNode>/tb_thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|tb_thirtytwobit_adder.v</ClosedNode>
+         <ClosedNode>/tb_thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|tb_thirtytwobit_adder.v/uut - thirtytwobit_adder</ClosedNode>
+         <ClosedNode>/tb_twobit_adder C:|Verilog Projects|MIPS_Processor|tb_twobit_adder.v</ClosedNode>
+         <ClosedNode>/tb_twobit_adder C:|Verilog Projects|MIPS_Processor|tb_twobit_adder.v/uut - twobit_adder</ClosedNode>
+         <ClosedNode>/thirtytwobit_adder C:|Verilog Projects|MIPS_Processor|thirtytwobit_adder.v</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tb_datapath_module (C:/Verilog Projects/MIPS_Processor/tb_datapath_module.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000183000000020000000000000000000000000200000064ffffffff000000810000000300000002000001830000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>tb_datapath_module (C:/Verilog Projects/MIPS_Processor/tb_datapath_module.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000112000000010000000100000000000000000000000064ffffffff000000810000000000000001000001120000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000c2000000b401000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>
