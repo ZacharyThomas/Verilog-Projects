@@ -1,0 +1,95 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Verilog Projects/MIPS_Processor/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to C:/Verilog Projects/MIPS_Processor/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: datapath_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\onebit_adder.v" into library work
+Parsing module <onebit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\twobit_adder.v" into library work
+Parsing module <twobit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\fourbit_adder.v" into library work
+Parsing module <fourbit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\eightbit_adder.v" into library work
+Parsing module <eightbit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\sixteenbit_adder.v" into library work
+Parsing module <sixteenbit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\thirtytwobit_adder.v" into library work
+Parsing module <thirtytwobit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\mult_module.v" into library work
+Parsing module <mult_module>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\instruction_memory.v" into library work
+Parsing module <instruction_memory>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\sign_extender.v" into library work
+Parsing module <sign_extender>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\register_file.v" into library work
+Parsing module <register_file>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\regdst_mux.v" into library work
+Parsing module <regdst_mux>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\memtoreg_mux.v" into library work
+Parsing module <memtoreg_mux>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\fetch_module.v" into library work
+Parsing module <fetch_module>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\data_memory.v" into library work
+Parsing module <data_memory>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\control_module.v" into library work
+Parsing module <control_module>.
+WARNING:HDLCompiler:568 - "C:\Verilog Projects\MIPS_Processor\control_module.v" Line 42: Constant value is truncated to fit in <6> bits.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\alu_module.v" into library work
+Parsing module <alu_module>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\alu_control_module.v" into library work
+Parsing module <alu_control_module>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\alusrc_mux.v" into library work
+Parsing module <alusrc_mux>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\datapath_module.v" into library work
+Parsing module <datapath_module>.
+
+
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.91 secs
+ 
+--> 
+
+Total memory usage is 215024 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

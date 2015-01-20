@@ -1,0 +1,454 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.47 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.47 secs
+ 
+--> Reading design: fetch_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fetch_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fetch_module"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : fetch_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\onebit_adder.v" into library work
+Parsing module <onebit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\twobit_adder.v" into library work
+Parsing module <twobit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\fourbit_adder.v" into library work
+Parsing module <fourbit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\eightbit_adder.v" into library work
+Parsing module <eightbit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\sixteenbit_adder.v" into library work
+Parsing module <sixteenbit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\thirtytwobit_adder.v" into library work
+Parsing module <thirtytwobit_adder>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\instruction_memory.v" into library work
+Parsing module <instruction_memory>.
+Analyzing Verilog file "C:\Verilog Projects\MIPS_Processor\fetch_module.v" into library work
+Parsing module <fetch_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <fetch_module>.
+
+Elaborating module <PC>.
+
+Elaborating module <thirtytwobit_adder>.
+
+Elaborating module <sixteenbit_adder>.
+
+Elaborating module <eightbit_adder>.
+
+Elaborating module <fourbit_adder>.
+
+Elaborating module <twobit_adder>.
+
+Elaborating module <onebit_adder>.
+WARNING:HDLCompiler:1127 - "C:\Verilog Projects\MIPS_Processor\fetch_module.v" Line 40: Assignment to c_out ignored, since the identifier is never used
+
+Elaborating module <instruction_memory>.
+Reading initialization file \"instructions.txt\".
+WARNING:HDLCompiler:91 - "C:\Verilog Projects\MIPS_Processor\instruction_memory.v" Line 35: Signal <in_file> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fetch_module>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\fetch_module.v".
+INFO:Xst:3210 - "C:\Verilog Projects\MIPS_Processor\fetch_module.v" line 35: Output port <c_out> of the instance <adder> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <fetch_module> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\PC.v".
+    Found 32-bit register for signal <data_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <thirtytwobit_adder>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\thirtytwobit_adder.v".
+    Summary:
+	no macro.
+Unit <thirtytwobit_adder> synthesized.
+
+Synthesizing Unit <sixteenbit_adder>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\sixteenbit_adder.v".
+    Summary:
+	no macro.
+Unit <sixteenbit_adder> synthesized.
+
+Synthesizing Unit <eightbit_adder>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\eightbit_adder.v".
+    Summary:
+	no macro.
+Unit <eightbit_adder> synthesized.
+
+Synthesizing Unit <fourbit_adder>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\fourbit_adder.v".
+    Summary:
+	no macro.
+Unit <fourbit_adder> synthesized.
+
+Synthesizing Unit <twobit_adder>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\twobit_adder.v".
+    Summary:
+	no macro.
+Unit <twobit_adder> synthesized.
+
+Synthesizing Unit <onebit_adder>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\onebit_adder.v".
+    Summary:
+Unit <onebit_adder> synthesized.
+
+Synthesizing Unit <instruction_memory>.
+    Related source file is "C:\Verilog Projects\MIPS_Processor\instruction_memory.v".
+WARNING:Xst:647 - Input <instr_addr<31:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'in_file', unconnected in block 'instruction_memory', is tied to its initial value.
+    Found 16x32-bit single-port Read Only RAM <Mram_in_file> for signal <in_file>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <instruction_memory> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x32-bit single-port Read Only RAM                   : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <instruction_memory>.
+INFO:Xst:3231 - The small RAM <Mram_in_file> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <instr_addr>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <instruction_memory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x32-bit single-port distributed Read Only RAM       : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PC> ...
+
+Optimizing unit <fetch_module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fetch_module, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fetch_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 74
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 5
+#      LUT3                        : 6
+#      LUT4                        : 21
+#      LUT5                        : 6
+#      LUT6                        : 34
+# FlipFlops/Latches                : 32
+#      FD                          : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 64
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              32  out of  126800     0%  
+ Number of Slice LUTs:                   73  out of  63400     0%  
+    Number used as Logic:                73  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     73
+   Number with an unused Flip Flop:      41  out of     73    56%  
+   Number with an unused LUT:             0  out of     73     0%  
+   Number of fully used LUT-FF pairs:    32  out of     73    43%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          65
+ Number of bonded IOBs:                  65  out of    210    30%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.233ns (Maximum Frequency: 447.888MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 2.508ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.233ns (frequency: 447.888MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.233ns (Levels of Logic = 3)
+  Source:            PC_1/data_out_15 (FF)
+  Destination:       PC_1/data_out_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: PC_1/data_out_15 to PC_1/data_out_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.697  PC_1/data_out_15 (PC_1/data_out_15)
+     LUT6:I0->O           16   0.097   0.580  adder/inst_1/inst_2/inst_1/inst_2/inst_1/c_in_ha_sum_AND_2_o1_SW0 (N6)
+     LUT6:I3->O            1   0.097   0.295  adder/inst_2/inst_2/inst_1/inst_1/inst_2/c_in_ha_sum_AND_2_o1 (adder/inst_2/inst_2/inst_1/carry_wire)
+     LUT6:I5->O            2   0.097   0.000  adder/inst_2/inst_2/inst_2/inst_2/inst_2/Mxor_sum_xo<0>1 (add_out_31_OBUF)
+     FD:D                      0.008          PC_1/data_out_31
+    ----------------------------------------
+    Total                      2.233ns (0.660ns logic, 1.573ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 588 / 47
+-------------------------------------------------------------------------
+Offset:              2.508ns (Levels of Logic = 4)
+  Source:            PC_1/data_out_15 (FF)
+  Destination:       add_out<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: PC_1/data_out_15 to add_out<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.698  PC_1/data_out_15 (PC_1/data_out_15)
+     LUT6:I0->O           16   0.097   0.580  adder/inst_1/inst_2/inst_1/inst_2/inst_1/c_in_ha_sum_AND_2_o1_SW0 (N6)
+     LUT6:I3->O            1   0.097   0.295  adder/inst_2/inst_2/inst_1/inst_1/inst_2/c_in_ha_sum_AND_2_o1 (adder/inst_2/inst_2/inst_1/carry_wire)
+     LUT6:I5->O            2   0.097   0.283  adder/inst_2/inst_2/inst_2/inst_2/inst_2/Mxor_sum_xo<0>1 (add_out_31_OBUF)
+     OBUF:I->O                 0.000          add_out_31_OBUF (add_out<31>)
+    ----------------------------------------
+    Total                      2.508ns (0.652ns logic, 1.856ns route)
+                                       (26.0% logic, 74.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.233|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 50.00 secs
+Total CPU time to Xst completion: 49.78 secs
+ 
+--> 
+
+Total memory usage is 480288 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
