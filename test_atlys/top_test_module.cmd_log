@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_test_module_map.ncd top_test_module.ngd top_test_module.pcf 
+par -w -intstyle ise -ol high -mt off top_test_module_map.ncd top_test_module.ncd top_test_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_test_module.twx top_test_module.ncd -o top_test_module.twr top_test_module.pcf -ucf atlys_ucf.ucf 
+bitgen -intstyle ise -f top_test_module.ut top_test_module.ncd 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_test_module_map.ncd top_test_module.ngd top_test_module.pcf 
+par -w -intstyle ise -ol high -mt off top_test_module_map.ncd top_test_module.ncd top_test_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_test_module.twx top_test_module.ncd -o top_test_module.twr top_test_module.pcf -ucf atlys_ucf.ucf 
+bitgen -intstyle ise -f top_test_module.ut top_test_module.ncd 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_test_module_map.ncd top_test_module.ngd top_test_module.pcf 
+par -w -intstyle ise -ol high -mt off top_test_module_map.ncd top_test_module.ncd top_test_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_test_module.twx top_test_module.ncd -o top_test_module.twr top_test_module.pcf -ucf atlys_ucf.ucf 
+bitgen -intstyle ise -f top_test_module.ut top_test_module.ncd 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_test_module_map.ncd top_test_module.ngd top_test_module.pcf 
+par -w -intstyle ise -ol high -mt off top_test_module_map.ncd top_test_module.ncd top_test_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_test_module.twx top_test_module.ncd -o top_test_module.twr top_test_module.pcf -ucf atlys_ucf.ucf 
+bitgen -intstyle ise -f top_test_module.ut top_test_module.ncd 
+xst -intstyle ise -ifn "C:/Verilog Projects/test_atlys/top_test_module.xst" -ofn "C:/Verilog Projects/test_atlys/top_test_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc atlys_ucf.ucf -p xc6slx45-csg324-3 "top_test_module.ngc" top_test_module.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_test_module_map.ncd top_test_module.ngd top_test_module.pcf 
+par -w -intstyle ise -ol high -mt off top_test_module_map.ncd top_test_module.ncd top_test_module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_test_module.twx top_test_module.ncd -o top_test_module.twr top_test_module.pcf -ucf atlys_ucf.ucf 
+bitgen -intstyle ise -f top_test_module.ut top_test_module.ncd 

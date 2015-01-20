@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Verilog Projects\test_atlys\top_test_module.ncd
+OUTFILE=C:\Verilog Projects\test_atlys\top_test_module.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Verilog Projects\test_atlys
+LICENSE=WebPack
+USER_INFO=210937641_0_0_116

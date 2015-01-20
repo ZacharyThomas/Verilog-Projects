@@ -32,7 +32,9 @@ module instruction_memory(
 	end
 	
 	always @(instr_addr) begin
+		
 		instr = in_file[instr_addr];
+		//if (instr_addr > 4) instr = in_file[4];
 	end
 	
 endmodule

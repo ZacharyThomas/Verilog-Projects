@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Verilog Projects/MIPS_Processor/tb_fetch_module_isim_beh.exe" -prj "C:/Verilog Projects/MIPS_Processor/tb_fetch_module_beh.prj" "work.tb_fetch_module" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Verilog Projects/MIPS_Processor/tb_datapath_module_isim_beh.exe" -prj "C:/Verilog Projects/MIPS_Processor/tb_datapath_module_beh.prj" "work.tb_datapath_module" "work.glbl" 
