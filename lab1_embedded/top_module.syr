@@ -1,0 +1,483 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: top_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_module"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : top_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Verilog Projects\lab1_embedded\debounce_module.v" into library work
+Parsing module <debounce_module>.
+Analyzing Verilog file "C:\Verilog Projects\lab1_embedded\counter_module.v" into library work
+Parsing module <counter_module>.
+Analyzing Verilog file "C:\Verilog Projects\lab1_embedded\clock_divider.v" into library work
+Parsing module <clock_divider>.
+Analyzing Verilog file "C:\Verilog Projects\lab1_embedded\top_module.v" into library work
+Parsing module <top_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_module>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <clock_divider>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <debounce_module>.
+
+Elaborating module <counter_module>.
+WARNING:HDLCompiler:413 - "C:\Verilog Projects\lab1_embedded\counter_module.v" Line 31: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_module>.
+    Related source file is "C:\Verilog Projects\lab1_embedded\top_module.v".
+WARNING:Xst:647 - Input <sw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <down> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <right> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <top_module> synthesized.
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "C:\Verilog Projects\lab1_embedded\clock_divider.v".
+    Found 32-bit register for signal <value>.
+    Found 1-bit register for signal <clk_div>.
+    Found 32-bit adder for signal <next_value> created at line 28.
+    Found 32-bit comparator greater for signal <n0001> created at line 31
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock_divider> synthesized.
+
+Synthesizing Unit <debounce_module>.
+    Related source file is "C:\Verilog Projects\lab1_embedded\debounce_module.v".
+    Found 4-bit register for signal <counter>.
+    Found 1-bit register for signal <next_debounce>.
+    Found 1-bit register for signal <sync_btn>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <debounce_module> synthesized.
+
+Synthesizing Unit <counter_module>.
+    Related source file is "C:\Verilog Projects\lab1_embedded\counter_module.v".
+    Found 4-bit register for signal <next_led_disp>.
+    Found 1-bit register for signal <prev_state>.
+    Found 5-bit adder for signal <n0014[4:0]> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <counter_module> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 7
+ 1-bit register                                        : 4
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clock_divider>.
+The following registers are absorbed into counter <value>: 1 register on signal <value>.
+Unit <clock_divider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_module>.
+The following registers are absorbed into counter <next_led_disp>: 1 register on signal <next_led_disp>.
+Unit <counter_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_module> ...
+
+Optimizing unit <debounce_module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_module, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <top_module> :
+	Found 2-bit shift register for signal <M2/counter_0>.
+Unit <top_module> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 151
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 35
+#      LUT3                        : 1
+#      LUT4                        : 3
+#      LUT5                        : 9
+#      MUXCY                       : 36
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 43
+#      FD                          : 38
+#      FDE                         : 5
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 10
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              43  out of  54576     0%  
+ Number of Slice LUTs:                   82  out of  27288     0%  
+    Number used as Logic:                81  out of  27288     0%  
+    Number used as Memory:                1  out of   6408     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     85
+   Number with an unused Flip Flop:      42  out of     85    49%  
+   Number with an unused LUT:             3  out of     85     3%  
+   Number of fully used LUT-FF pairs:    40  out of     85    47%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  10  out of    218     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+M1/clk_div                         | BUFG                   | 11    |
+clk                                | IBUFG+BUFG             | 33    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.701ns (Maximum Frequency: 270.223MHz)
+   Minimum input arrival time before clock: 1.801ns
+   Maximum output required time after clock: 3.732ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clk_div'
+  Clock period: 2.442ns (frequency: 409.484MHz)
+  Total number of paths / destination ports: 28 / 14
+-------------------------------------------------------------------------
+Delay:               2.442ns (Levels of Logic = 1)
+  Source:            M2/next_debounce (FF)
+  Destination:       M4/next_led_disp_0 (FF)
+  Source Clock:      M1/clk_div rising
+  Destination Clock: M1/clk_div rising
+
+  Data Path: M2/next_debounce to M4/next_led_disp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.447   0.788  M2/next_debounce (M2/next_debounce)
+     LUT2:I0->O            4   0.203   0.683  M4/up_press_prev_state_AND_1_o1 (M4/up_press_prev_state_AND_1_o)
+     FDE:CE                    0.322          M4/next_led_disp_0
+    ----------------------------------------
+    Total                      2.442ns (0.972ns logic, 1.470ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.701ns (frequency: 270.223MHz)
+  Total number of paths / destination ports: 2113 / 33
+-------------------------------------------------------------------------
+Delay:               3.701ns (Levels of Logic = 7)
+  Source:            M1/value_8 (FF)
+  Destination:       M1/clk_div (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: M1/value_8 to M1/clk_div
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  M1/value_8 (M1/value_8)
+     LUT5:I0->O            1   0.203   0.000  M1/Mcompar_n0001_lut<0> (M1/Mcompar_n0001_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  M1/Mcompar_n0001_cy<0> (M1/Mcompar_n0001_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  M1/Mcompar_n0001_cy<1> (M1/Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  M1/Mcompar_n0001_cy<2> (M1/Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  M1/Mcompar_n0001_cy<3> (M1/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O          33   0.213   1.306  M1/Mcompar_n0001_cy<4> (M1/Mcompar_n0001_cy<4>)
+     LUT2:I1->O            1   0.205   0.000  M1/value_0_rstpot (M1/value_0_rstpot)
+     FD:D                      0.102          M1/value_0
+    ----------------------------------------
+    Total                      3.701ns (1.399ns logic, 2.302ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M1/clk_div'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.801ns (Levels of Logic = 1)
+  Source:            up (PAD)
+  Destination:       M2/Mshreg_counter_0 (FF)
+  Destination Clock: M1/clk_div rising
+
+  Data Path: up to M2/Mshreg_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  up_IBUF (up_IBUF)
+     SRLC16E:D                -0.060          M2/Mshreg_counter_0
+    ----------------------------------------
+    Total                      1.801ns (1.222ns logic, 0.579ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/clk_div'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.732ns (Levels of Logic = 1)
+  Source:            M4/next_led_disp_0 (FF)
+  Destination:       led<0> (PAD)
+  Source Clock:      M1/clk_div rising
+
+  Data Path: M4/next_led_disp_0 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.447   0.714  M4/next_led_disp_0 (M4/next_led_disp_0)
+     OBUF:I->O                 2.571          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      3.732ns (3.018ns logic, 0.714ns route)
+                                       (80.9% logic, 19.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock M1/clk_div
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clk_div     |    2.442|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.701|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.15 secs
+ 
+--> 
+
+Total memory usage is 258528 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

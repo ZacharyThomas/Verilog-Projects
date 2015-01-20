@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jan 20 03:26:22 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "down" LOCATE = SITE "P3" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "clk" LOCATE = SITE "L15" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "L14" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "D4" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "N12" LEVEL 1;
+COMP "up" LOCATE = SITE "N4" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "A10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "D14" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "C14" LEVEL 1;
+COMP "right" LOCATE = SITE "F6" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "M1/clk_div" BEL "M1/value_0" BEL "M1/value_1" BEL
+        "M1/value_2" BEL "M1/value_3" BEL "M1/value_4" BEL "M1/value_5" BEL
+        "M1/value_6" BEL "M1/value_7" BEL "M1/value_8" BEL "M1/value_9" BEL
+        "M1/value_10" BEL "M1/value_11" BEL "M1/value_12" BEL "M1/value_13"
+        BEL "M1/value_14" BEL "M1/value_15" BEL "M1/value_16" BEL
+        "M1/value_17" BEL "M1/value_18" BEL "M1/value_19" BEL "M1/value_20"
+        BEL "M1/value_21" BEL "M1/value_22" BEL "M1/value_23" BEL
+        "M1/value_24" BEL "M1/value_25" BEL "M1/value_26" BEL "M1/value_27"
+        BEL "M1/value_28" BEL "M1/value_29" BEL "M1/value_30" BEL
+        "M1/value_31" BEL "clk_ibufg_BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+
