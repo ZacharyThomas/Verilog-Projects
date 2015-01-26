@@ -1,4 +1,0 @@
-verilog work "debounce_module.v"
-verilog work "counter_module.v"
-verilog work "clock_divider.v"
-verilog work "top_module.v"

@@ -1,0 +1,6 @@
+verilog work "pbdebounce.v"
+verilog work "out_mux.v"
+verilog work "clock.v"
+verilog work "bcd_controller_module.v"
+verilog work "bcdadd3.v"
+verilog work "top_module.v"

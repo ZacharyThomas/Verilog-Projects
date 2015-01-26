@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Verilog Projects\lab1_embedded\top_module.ncd
-OUTFILE=C:\Verilog Projects\lab1_embedded\top_module.bit
-FAMILY=Spartan6
-PART=xc6slx45-3csg324
-WORKINGDIR=C:\Verilog Projects\lab1_embedded
-LICENSE=WebPack
-USER_INFO=210937641_0_0_116
